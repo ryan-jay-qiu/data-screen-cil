@@ -1,0 +1,3 @@
+[submodule "template/template-vue-js"]
+	path = template/template-vue-js
+	url = https://github.com/Coolboyzzzzz/dataScreenTemplate.git

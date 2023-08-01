@@ -1,0 +1,27 @@
+{
+  "name": "data-screen-cil",
+  "version": "1.0.0",
+  "description": "用于数据大屏的项目初始化",
+  "keywords": [
+    "cli","vue-cil"
+  ],
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "data-screen-cil": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiaobei",
+  "license": "MIT",
+  "dependencies": {
+  "chalk": "^5.1.2",
+  "cross-spawn": "^7.0.3",
+  "download-git-repo": "^3.0.2",
+  "esbuild": "^0.18.16",
+  "minimist": "^1.2.7",
+  "ora": "^6.1.2",
+  "prompts": "^2.4.2"
+  }
+}
