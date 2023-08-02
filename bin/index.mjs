@@ -60,7 +60,8 @@ const projectInit = async () => {
       message: '选择框架？',
       choices: () => [
         { title: 'Vue(推荐)', value: 'vue' },
-        { title: 'React(暂不支持)', value: 'react' }
+        { title: 'React', value: 'react' },
+        { title: 'Augular', value: 'react' },
       ],
       initial: 0
     },
