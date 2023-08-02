@@ -11,15 +11,15 @@
 ```shell
 $ npm install data-screen-cil -g
 ```
-![安装](https://github.com/bigscreen/Coolboyzzzzz/data-screen-cil/assets/img/1.png)
+![安装](https://github.com/Coolboyzzzzz/data-screen-cil/blob/master/assets/img/1.png)
 ### 然后运行命令
 
 ```shell
 $ data-screen-cil
 ```
 回车 然后在对应的模板库或者组件库选项
-![示例](https://github.com/bigscreen/Coolboyzzzzz/data-screen-cil/assets/img/2.png)
+![示例](https://github.com/Coolboyzzzzz/data-screen-cil/blob/master/assets/img/2.png)
 ## 安装项目依赖完成
 
-![示例](https://github.com/bigscreen/Coolboyzzzzz/data-screen-cil/assets/img/3.png)
+![示例](https://github.com/Coolboyzzzzz/data-screen-cil/blob/master/assets/img/3.png)
 
