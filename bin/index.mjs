@@ -125,9 +125,14 @@ const projectInit = async () => {
   console.log(chalk.cyan('\n项目生成路径：'), targetDir, '\n')
 
   // 加载本地绝对文件路径
+  //注意这里有坑 本地开发的时候用esm语法 但是build的时候用cjs语法。 如果在esm中用cjs比如__dirname会报错只能用 import.meta.url
+  //但是写成import.meta.url在build的时候会报错 因为esbuild 用csj解析的识别不了import.meta.url
   const templateName = `template-${framework}-${language}`
-  const templateRoot = path.resolve(__dirname, '../../', './template', templateName)
-  // console.log('templateRoot>>>', templateRoot)
+  // const templateRoot = path.resolve(__dirname, './template', templateName)
+  const templateRoot = path.resolve(__dirname,  '../','template',templateName)
+  // const templateRoot =path.resolve(new URL(import.meta.url).pathname,'../../','./template', templateName)
+  // const templateRoot = path.resolve(url.fileURLToPath(import.meta.url), '../../', './template', templateName)
+  console.log('templateRoot>>>', templateRoot)
 
 
   spinner.start()

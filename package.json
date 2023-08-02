@@ -3,25 +3,44 @@
   "version": "1.0.0",
   "description": "用于数据大屏的项目初始化",
   "keywords": [
-    "cli","vue-cil"
+    "cli","vue-cil","vue","vue3","react","creat-react-app"
   ],
-  "main": "index.js",
+  "main": "dist/main.cjs",
   "type": "module",
   "bin": {
-    "data-screen-cil": "./bin/index.js"
+    "data-screen-cil": "bin/index.js"
   },
+  "files": [
+    "dist",
+    "template"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"node ./index.mjs",
+    "build":"node ./bin/build.mjs"
   },
-  "author": "xiaobei",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Coolboyzzzzz/data-screen-cil.git"
+  },
+  "author": {
+    "name": "Qiurj",
+    "email": "run839169472@gmail.com",
+    "url": "https://github.com/Coolboyzzzzz"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Coolboyzzzzz/data-screen-cil/issues"
+  },
+  "homepage": "https://github.com/Coolboyzzzzz/data-screen-cil#readme",
   "dependencies": {
   "chalk": "^5.1.2",
   "cross-spawn": "^7.0.3",
-  "download-git-repo": "^3.0.2",
-  "esbuild": "^0.18.16",
   "minimist": "^1.2.7",
   "ora": "^6.1.2",
   "prompts": "^2.4.2"
+  },
+  "devDependencies":{
+    "esbuild": "^0.18.16",
+    "download-git-repo": "^3.0.2"
   }
 }
