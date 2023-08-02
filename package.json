@@ -1,9 +1,14 @@
 {
   "name": "data-screen-cil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "用于数据大屏的项目初始化",
   "keywords": [
-    "cli","vue-cil","vue","vue3","react","creat-react-app"
+    "cli",
+    "vue-cil",
+    "vue",
+    "vue3",
+    "react",
+    "creat-react-app"
   ],
   "main": "dist/main.cjs",
   "type": "module",
@@ -15,8 +20,8 @@
     "template"
   ],
   "scripts": {
-    "dev":"node ./index.mjs",
-    "build":"node ./bin/build.mjs"
+    "dev": "node ./index.mjs",
+    "build": "node ./bin/build.mjs"
   },
   "repository": {
     "type": "git",
@@ -33,13 +38,13 @@
   },
   "homepage": "https://github.com/Coolboyzzzzz/data-screen-cil#readme",
   "dependencies": {
-  "chalk": "^5.1.2",
-  "cross-spawn": "^7.0.3",
-  "minimist": "^1.2.7",
-  "ora": "^6.1.2",
-  "prompts": "^2.4.2"
+    "chalk": "^5.1.2",
+    "cross-spawn": "^7.0.3",
+    "minimist": "^1.2.7",
+    "ora": "^6.1.2",
+    "prompts": "^2.4.2"
   },
-  "devDependencies":{
+  "devDependencies": {
     "esbuild": "^0.18.16",
     "download-git-repo": "^3.0.2"
   }
