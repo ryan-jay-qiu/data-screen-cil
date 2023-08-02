@@ -8,7 +8,7 @@
   "main": "dist/main.cjs",
   "type": "module",
   "bin": {
-    "data-screen-cil": "bin/index.js"
+    "data-screen-cil": "dist/main.cjs"
   },
   "files": [
     "dist",
@@ -23,7 +23,7 @@
     "url": "https://github.com/Coolboyzzzzz/data-screen-cil.git"
   },
   "author": {
-    "name": "Qiurj",
+    "name": "qiurunjie",
     "email": "run839169472@gmail.com",
     "url": "https://github.com/Coolboyzzzzz"
   },
