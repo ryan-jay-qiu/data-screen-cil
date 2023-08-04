@@ -25,18 +25,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Coolboyzzzzz/data-screen-cil.git"
+    "url": "https://github.com/ryan-jay-qiu/data-screen-cil.git"
   },
   "author": {
     "name": "qiurunjie",
     "email": "run839169472@gmail.com",
-    "url": "https://github.com/Coolboyzzzzz"
+    "url": "https://github.com/ryan-jay-qiu"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Coolboyzzzzz/data-screen-cil/issues"
+    "url": "https://github.com/ryan-jay-qiu/data-screen-cil/issues"
   },
-  "homepage": "https://github.com/Coolboyzzzzz/data-screen-cil#readme",
+  "homepage": "https://github.com/ryan-jay-qiu/data-screen-cil#readme",
   "dependencies": {
     "chalk": "^5.1.2",
     "cross-spawn": "^7.0.3",
