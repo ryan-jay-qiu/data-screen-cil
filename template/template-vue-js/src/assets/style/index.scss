@@ -1,0 +1,9 @@
+@import './base.scss';
+
+@mixin bgIndex {
+    position: absolute;
+    z-index:99;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    backdrop-filter: blur(10px);
+}
