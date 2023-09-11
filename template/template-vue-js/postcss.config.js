@@ -25,13 +25,12 @@
 //     }),
 //     require('autoprefixer')({
 //       overrideBrowserslist: [
-//         "> 1%",
-//         "last 2 versions",
-//         "IE 11"
+// "> 0.001%",
+// "last 1 versions",
+// "IE 8"
 //       ],
 //       // grid: true
 //       // overrideBrowserslist: "browserslist"
 //     })
 //   ]
 // };
-

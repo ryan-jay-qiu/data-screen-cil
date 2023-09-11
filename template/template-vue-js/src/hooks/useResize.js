@@ -4,17 +4,15 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 export const width = 1920
 export const height = 1080
 
-
-export const useResize = (options = {
-  width, height, fullScreen: false,
-  delay: 100
-}) => {
-  const {
-    w = width,
-    h = height,
-    fullScreen = false,
-    delay = 100
-  } = options
+export const useResize = (
+  options = {
+    width,
+    height,
+    fullScreen: false,
+    delay: 100
+  }
+) => {
+  const { w = width, h = height, fullScreen = false, delay = 100 } = options
   // 缩放元素
   const screenRef = ref()
   const scale = ref(1)
@@ -34,7 +32,7 @@ export const useResize = (options = {
       // 如果浏览器的宽高比小于设计稿的宽高比，就取浏览器宽度和设计稿宽度之比
       scale.value = scaleW
     }
-    screenRef.value.style.transformOrigin = `top left`;
+    screenRef.value.style.transformOrigin = `top left`
     if (fullScreen) {
       // 如果不在乎缩放失真的情况，可以设置全屏
       screenRef.value.style.transform = `scale(${scaleW}, ${scaleH})`

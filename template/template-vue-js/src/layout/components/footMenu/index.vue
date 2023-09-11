@@ -1,7 +1,6 @@
 <template>
   <transition-group tag="div" class="tagBox" name="fade">
-    <div v-for="(item, index) in list" :key="item.path" class="tag" :class="{ active: 3 == index }"
-      :style="getImg(item.path, item.type)" @click="clickTag(index, item)" />
+    <div v-for="(item, index) in list" :key="item.path" class="tag" :class="{ active: 3 == index }" :style="getImg(item.path, item.type)" @click="clickTag(index, item)" />
   </transition-group>
 </template>
 
@@ -20,14 +19,14 @@ const list = reactive([
 const path = props.defaultActive == "/" ? '/home' : props.defaultActive
 list[3].path = list.find(item => item.page == path).path;
 //点击中心元素
-function clickTag(index, item) {
+function clickTag (index, item) {
   if (index == 3) return;
   emit("change", item.page);
   list[3].path = item.path;
 }
 // 获取图片样式
 // imgUrl.value = new URL(`./assets/images/${props.type}.png`, import.meta.url)();
-function getImg(name, type) {
+function getImg (name, type) {
   let img = type
     ? new URL(`./assets/img/${list[3].path}-focu.png`, import.meta.url)
     : new URL(`./assets/img/${name}.png`, import.meta.url);
@@ -49,13 +48,13 @@ function getImg(name, type) {
 
 .left {
   margin-top: 30px;
-  background: url("@/assets/btnleft.png") no-repeat;
+  background: url('@/assets/btnleft.png') no-repeat;
   background-size: contain;
 }
 
 .right {
   margin-top: 20px;
-  background: url("@/assets/btnright.png") no-repeat;
+  background: url('@/assets/btnright.png') no-repeat;
   background-size: contain;
 }
 

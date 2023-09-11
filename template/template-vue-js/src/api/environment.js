@@ -5,8 +5,8 @@ export function envirLogin() {
     url: '/api/system/user/login',
     method: 'post',
     params: {
-      loginName: "c230216hnwj",
-      password: "c230216hnwj"
+      loginName: 'c230216hnwj',
+      password: 'c230216hnwj'
     }
   })
 }

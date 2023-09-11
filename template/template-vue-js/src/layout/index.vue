@@ -4,8 +4,8 @@
   <footMenu class="footer" :default-active="active" @change="routerChange" />
 </template>
 <script setup>
-// import footMenu from "./components/footMenu";
-// import headerTime from './components/headerTime';
+import footMenu from "./components/footMenu";
+import headerTime from './components/headerTime';
 import { ref, onMounted, onBeforeMount, nextTick } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();

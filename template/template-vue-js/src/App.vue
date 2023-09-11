@@ -80,10 +80,10 @@ const style = {
   display: none;
 }
 
+
 .fade-in-down-right-enter-active,
 .fade-in-down-right-leave-active {
-  will-change: transform;
-  transition: all 1s ease-out;
+  transition: opacity 1s ease-out,transform 1s ease-out;
   /*1s后从初始状态，过渡到显示状态*/
 }
 
@@ -92,15 +92,6 @@ const style = {
   transform: translateX(100%);
 }
 
-.fade-in-down-right-enter-to {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.fade-in-down-right-leave-from {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 .fade-in-down-right-leave-to {
   opacity: 0;
@@ -108,61 +99,17 @@ const style = {
 }
 
 
-.fade-in-down-enter-active {
-  animation: fade-in-down-enter 1s ease-out;
+.fade-in-down-enter-active,.fade-in-down-leave-active {
+  transition: opacity 1s ease-out,transform 1s ease-out;
 }
-
-.fade-in-down-leave-active {
-  animation: fade-in-down-leave 1s ease-out;
-}
-
-@keyframes fade-in-down-enter {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fade-in-down-leave {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateX(100%);
-  }
+.fade-in-down-enter-from {
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
 
-
-
-
-.el-loading-spinner {
-  margin-top: 0 !important;
-  transform: translateY(-50%);
-}
-
-.echart .watch>div:last-child {
-
-  background: rgba(0, 61, 135, 0.8);
-  background-color: rgba(0, 61, 135, 0.8) !important;
-  backdrop-filter: blur(15px);
-  border-style: none !important;
-
-  div {
-    color: #D1E0FF !important;
-  }
-
-  span:not(span:first-child) {
-    color: #D1E0FF !important;
-  }
+.fade-in-down-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
 }
 </style>
-@/utils/useScale.js

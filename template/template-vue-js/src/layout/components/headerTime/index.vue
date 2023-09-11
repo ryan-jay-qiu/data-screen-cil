@@ -121,7 +121,7 @@ const { year, month, day, week, hour, minute, second, nowTime } = useTime()
   margin: 0 auto;
   position: absolute;
   position: relative;
-  background: url("./assets/img/header2.png") no-repeat;
+  background: url('./assets/img/header2.png') no-repeat;
   background-position: center;
 }
 </style>
